@@ -2588,6 +2588,7 @@ input, select, textarea {
 
 /* Image */
 
+
 	.image {
 		border: 0;
 		display: inline-block;
@@ -2646,7 +2647,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 550px) {
 
 			.image.fit {
 				margin: 2rem 0;
@@ -2657,7 +2658,7 @@ input, select, textarea {
 			}
 
 		}
-
+		
 	a.image {
 		overflow: hidden;
 	}
