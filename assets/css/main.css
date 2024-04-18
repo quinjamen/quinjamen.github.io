@@ -2628,6 +2628,15 @@ input, select, textarea {
 				clear: both;
 			}
 		}
+		@media screen and (max-width: 736px) {
+			.image.right {
+				float: none;
+				margin: 0 auto 2rem auto;
+				display: block;
+				text-align: center;
+				clear: both;
+			}
+		}
 
 		.image.fit {
 			display: block;
