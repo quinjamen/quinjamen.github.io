@@ -2621,6 +2621,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 			.image.left {
+				
 				float: none;
 				margin: 0 auto 2rem auto;
 				display: block;
@@ -4716,3 +4717,192 @@ input, select, textarea {
 		}
 
 	}
+
+
+
+
+
+
+/* Reset */
+ /*body {
+	margin: 0;
+}
+
+.image-grid {
+	--gap: 16px;
+	--num-cols: 3;
+	--row-height: 300px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+
+.image-grid>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-grid-col-2 {
+	grid-column: span 2;
+}
+
+.image-grid-row-2 {
+	grid-row: span 2;
+}
+
+  Anything udner 1024px 
+@media screen and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+
+ /* .gallery {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		}
+		
+		.div1 { grid-area: 1 / 1 / 3 / 3; }
+		.div2 { grid-area: 1 / 3 / 2 / 4; }
+		.div3 { grid-area: 2 / 3 / 3 / 4; }
+		.div4 { grid-area: 3 / 1 / 4 / 4; }
+		.div5 { grid-area: 4 / 1 / 6 / 3; }
+		.div6 { grid-area: 4 / 3 / 5 / 4; }
+		.div7 { grid-area: 5 / 3 / 6 / 4; }
+/*	gap: 1rem;
+  } */
+  .gallery {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+	gap: 1rem;
+  }
+  
+ 
+
+
+  .gallery img {
+	display: block;
+	width: 100%;
+  }
+  .gallery figure {
+	--gallery-height: 15rem;
+  
+	/* reset figure default margin */
+	margin: 0;
+	height: var(--gallery-height);
+	background-color: hsl(200, 85%, 2%);
+  }
+  .gallery img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	height: var(--gallery-height);
+  }
+  /* Add aspect-ratio custom property */
+.gallery figure {
+	--gallery-aspect-ratio: 1/1;
+  }
+  
+  @supports (aspect-ratio: 1) {
+	.gallery figure,
+	.gallery img {
+	  aspect-ratio: var(--gallery-aspect-ratio);
+	  /* Remove height to prevent distorting aspect-ratio */
+	  height: auto;
+	}
+  }
+  .gallery figure {
+	/* ...existing styles */
+  
+	display: grid;
+	grid-template-areas: "card";
+	place-items: end;
+	border-radius: 0.5rem;
+	overflow: hidden;
+  }
+  
+  .gallery figure > * {
+	grid-area: card;
+  }
+  
+  .gallery figcaption {
+	transform: translateY(100%);
+  }
+  .gallery figcaption {
+	transform: translateY(100%);
+	transition: transform 800ms ease-in;
+  
+	/* Visual styles for the caption */
+	padding: 0.25em 0.5em;
+	border-radius: 4px 0 0 0;
+	background-color: hsl(0 0% 100% / 87%);
+  }
+  
+  .gallery figure:hover figcaption {
+	transform: translateY(0);
+  }
+  .gallery img {
+	transform: scale(1) translate(0, 0);
+	transition: transform 825ms ease-in;
+  }
+  
+  .gallery figure:hover img {
+	transform: scale(1.3) translate(-8%, -3%);
+  }
+  
+  .gallery figcaption {
+	/* added 400ms delay */
+	transition: transform 800ms 400ms ease-in;
+  }
+  .gallery figure:focus {
+	outline: 2px solid white;
+	outline-offset: 2px;
+  }
+  
+  .gallery figure:hover figcaption,
+  .gallery figure:focus figcaption {
+	transform: translateY(0);
+  }
+  
+  .gallery figure:hover img,
+  .gallery figure:focus img {
+	transform: scale(1.3) translate(-8%, -3%);
+  }
+  .gallery figcaption {
+	transform: translateY(100%);
+	/* provide stacking context */
+	z-index: 1;
+  }
+  
+  @media (any-hover: hover) and (any-pointer: fine) {
+	.gallery figcaption {
+	  transform: translateY(100%);
+	}
+  }
+
+
+  .centervid {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
