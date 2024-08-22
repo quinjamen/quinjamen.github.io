@@ -4906,3 +4906,74 @@ input, select, textarea {
     margin-right: auto;
     display: block
 }
+
+
+
+
+
+
+
+
+/* STYLE FOR SLIDER*/
+
+.content {
+	padding: 20px;
+	margin-bottom: 60px; /* Ensure there's enough space for the slider */
+  }
+  
+  /* Slider Container */
+  .slider-container {
+	position: relative;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+  }
+  
+  /* Slider */
+  .slider {
+	position: relative;
+	max-width: 100%;
+	margin: auto;
+	overflow: hidden;
+  }
+  
+  .slide {
+	display: none;
+  }
+  
+  .slide img {
+	width: 100%;
+	height: auto;
+  }
+  
+  /* Navigation */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 10; /* Ensure buttons are above slides */
+  }
+  
+  .prev {
+	left: 10px;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  .next {
+	right: 10px;
+	border-radius: 3px 0 0 3px;
+  }
+
+
+  
